@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { searchProducts, getProductPrice } from '@/lib/data/productDatabase';
 
 // Transform products from our database to Target API format
-function transformToTargetFormat(products: any[], storeId?: string) {
+function transformToTargetFormat(products: any[], storeId?: string | undefined) {
   return products.map(product => {
     const pricing = getProductPrice(product.id, 'target', storeId || 'target-1375');
     

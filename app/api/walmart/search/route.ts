@@ -75,7 +75,7 @@ export async function GET(request: NextRequest) {
     const products = searchProducts(query, 10);
     console.log(`Found ${products.length} products from database`);
     
-    const walmartProducts = transformToWalmartFormat(products, searchParams.get('storeId') || undefined);
+    const walmartProducts = transformToWalmartFormat(products, storeId);
     
     return NextResponse.json({
       items: walmartProducts,

@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "w-001",
+    "name": "Whole Milk",
+    "brand": "Great Value",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 3.48,
+    "inStock": true
+  },
+  {
+    "sku": "w-002",
+    "name": "Bananas",
+    "brand": "",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.58,
+    "inStock": true
+  },
+  {
+    "sku": "w-003",
+    "name": "Peanut Butter Creamy",
+    "brand": "Great Value",
+    "category": "pantry",
+    "size": { "value": 16, "unit": "oz" },
+    "price": 1.84,
+    "inStock": true
+  },
+  {
+    "sku": "w-004",
+    "name": "Chicken Breast Boneless Skinless",
+    "brand": "",
+    "category": "meat",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 3.24,
+    "inStock": true
+  }
+]

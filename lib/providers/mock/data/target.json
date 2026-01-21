@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "t-001",
+    "name": "Whole Milk",
+    "brand": "Good & Gather",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 3.79,
+    "inStock": true
+  },
+  {
+    "sku": "t-002",
+    "name": "Bananas",
+    "brand": "",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.69,
+    "inStock": true
+  },
+  {
+    "sku": "t-003",
+    "name": "Peanut Butter Creamy",
+    "brand": "Good & Gather",
+    "category": "pantry",
+    "size": { "value": 16, "unit": "oz" },
+    "price": 2.19,
+    "inStock": true
+  },
+  {
+    "sku": "t-004",
+    "name": "Chicken Breast Boneless Skinless",
+    "brand": "",
+    "category": "meat",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 3.49,
+    "inStock": true
+  }
+]

@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { HybridProvider } from "@/lib/providers/real/hybridProvider";
-import { MockProvider } from "@/lib/providers/mock/mockProvider";
-import { optimize } from "@/lib/domain/optimizer";
-import type { StoreId } from "@/lib/domain/types";
+// Use relative imports to avoid path issues
+import { HybridProvider } from "../../../lib/providers/real/hybridProvider";
+import { MockProvider } from "../../../lib/providers/mock/mockProvider";
+import { optimize } from "../../../lib/domain/optimizer";
+import type { StoreId } from "../../../lib/domain/types";
 
 const ItemSchema = z.object({
   id: z.string(),
@@ -31,10 +32,14 @@ const BodySchema = z.object({
 
 export async function POST(req: Request) {
   try {
+    console.log("API route called");
     const body = await req.json();
+    console.log("Request body:", JSON.stringify(body, null, 2));
+    
     const parsed = BodySchema.safeParse(body);
 
     if (!parsed.success) {
+      console.log("Validation error:", parsed.error.flatten());
       return NextResponse.json(
         { error: "Invalid request", details: parsed.error.flatten() },
         { status: 400 }
@@ -42,6 +47,7 @@ export async function POST(req: Request) {
     }
 
     const { items, stores, storeLocations, maxStores } = parsed.data;
+    console.log("Parsed data:", { items: items.length, stores, maxStores });
 
     const quotes = await Promise.all(
       stores.map(async (storeId: StoreId) => {

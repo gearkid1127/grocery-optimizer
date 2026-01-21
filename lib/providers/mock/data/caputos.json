@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "c-001",
+    "name": "Whole Milk",
+    "brand": "Caputo's",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 4.09,
+    "inStock": true
+  },
+  {
+    "sku": "c-002",
+    "name": "Vanilla Ice Cream",
+    "brand": "Caputo's",
+    "category": "frozen",
+    "size": { "value": 48, "unit": "oz" },
+    "price": 4.69,
+    "inStock": true
+  },
+  {
+    "sku": "c-003",
+    "name": "White Bread",
+    "brand": "Caputo's",
+    "category": "bakery",
+    "size": { "value": 20, "unit": "oz" },
+    "price": 2.39,
+    "inStock": true
+  },
+  {
+    "sku": "c-004",
+    "name": "Bananas",
+    "brand": "Fresh",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.89,
+    "inStock": true
+  }
+]

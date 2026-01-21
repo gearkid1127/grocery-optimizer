@@ -29,7 +29,8 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const query = searchParams.get('query');
-    const storeId = searchParams.get('storeId'); // Optional store location
+    const storeIdParam = searchParams.get('storeId'); // Optional store location
+    const storeId = storeIdParam || undefined; // Convert null to undefined
 
     if (!query) {
       return NextResponse.json(

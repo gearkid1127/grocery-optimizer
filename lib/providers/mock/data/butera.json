@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "b-001",
+    "name": "Whole Milk",
+    "brand": "Butera",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 4.19,
+    "inStock": true
+  },
+  {
+    "sku": "b-002",
+    "name": "Vanilla Ice Cream",
+    "brand": "Butera",
+    "category": "frozen",
+    "size": { "value": 48, "unit": "oz" },
+    "price": 4.79,
+    "inStock": true
+  },
+  {
+    "sku": "b-003",
+    "name": "White Bread",
+    "brand": "Butera",
+    "category": "bakery",
+    "size": { "value": 20, "unit": "oz" },
+    "price": 2.29,
+    "inStock": true
+  },
+  {
+    "sku": "b-004",
+    "name": "Bananas",
+    "brand": "Fresh",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.79,
+    "inStock": true
+  }
+]

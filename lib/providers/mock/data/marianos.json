@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "m-001",
+    "name": "Whole Milk",
+    "brand": "Mariano's",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 3.89,
+    "inStock": true
+  },
+  {
+    "sku": "m-002",
+    "name": "Vanilla Ice Cream",
+    "brand": "Mariano's",
+    "category": "frozen",
+    "size": { "value": 48, "unit": "oz" },
+    "price": 4.29,
+    "inStock": true
+  },
+  {
+    "sku": "m-003",
+    "name": "White Bread",
+    "brand": "Mariano's",
+    "category": "bakery",
+    "size": { "value": 20, "unit": "oz" },
+    "price": 2.19,
+    "inStock": true
+  },
+  {
+    "sku": "m-004",
+    "name": "Bananas",
+    "brand": "Fresh",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.78,
+    "inStock": true
+  }
+]

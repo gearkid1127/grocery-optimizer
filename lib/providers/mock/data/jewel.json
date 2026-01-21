@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "j-001",
+    "name": "Whole Milk",
+    "brand": "Jewel",
+    "category": "dairy",
+    "size": { "value": 64, "unit": "oz" },
+    "price": 3.99,
+    "inStock": true
+  },
+  {
+    "sku": "j-002",
+    "name": "Vanilla Ice Cream",
+    "brand": "Jewel",
+    "category": "frozen",
+    "size": { "value": 48, "unit": "oz" },
+    "price": 4.49,
+    "inStock": true
+  },
+  {
+    "sku": "j-003",
+    "name": "White Bread",
+    "brand": "Jewel",
+    "category": "bakery",
+    "size": { "value": 20, "unit": "oz" },
+    "price": 1.99,
+    "inStock": true
+  },
+  {
+    "sku": "j-004",
+    "name": "Bananas",
+    "brand": "Fresh",
+    "category": "produce",
+    "size": { "value": 1, "unit": "lb" },
+    "price": 0.68,
+    "inStock": true
+  }
+]

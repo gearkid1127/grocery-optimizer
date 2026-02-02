@@ -1,38 +1,1562 @@
 [
-  {
-    "sku": "j-001",
-    "name": "Whole Milk",
-    "brand": "Jewel",
-    "category": "dairy",
-    "size": { "value": 64, "unit": "oz" },
-    "price": 3.99,
-    "inStock": true
-  },
-  {
-    "sku": "j-002",
-    "name": "Vanilla Ice Cream",
-    "brand": "Jewel",
-    "category": "frozen",
-    "size": { "value": 48, "unit": "oz" },
-    "price": 4.49,
-    "inStock": true
-  },
-  {
-    "sku": "j-003",
-    "name": "White Bread",
-    "brand": "Jewel",
-    "category": "bakery",
-    "size": { "value": 20, "unit": "oz" },
-    "price": 1.99,
-    "inStock": true
-  },
-  {
-    "sku": "j-004",
-    "name": "Bananas",
-    "brand": "Fresh",
-    "category": "produce",
-    "size": { "value": 1, "unit": "lb" },
-    "price": 0.68,
-    "inStock": true
-  }
+    {
+        "name":  "Whole Milk",
+        "sku":  "j-001",
+        "inStock":  true,
+        "price":  4.08,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "2% Milk",
+        "sku":  "j-002",
+        "inStock":  true,
+        "price":  3.88,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Skim Milk",
+        "sku":  "j-003",
+        "inStock":  true,
+        "price":  3.78,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Eggs Large Grade A",
+        "sku":  "j-004",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cheddar Cheese",
+        "sku":  "j-005",
+        "inStock":  true,
+        "price":  2.98,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mozzarella Cheese",
+        "sku":  "j-006",
+        "inStock":  true,
+        "price":  3.27,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Vanilla",
+        "sku":  "j-007",
+        "inStock":  true,
+        "price":  3.58,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Greek",
+        "sku":  "j-008",
+        "inStock":  true,
+        "price":  3.87,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sour Cream",
+        "sku":  "j-009",
+        "inStock":  true,
+        "price":  2.58,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Butter Salted",
+        "sku":  "j-010",
+        "inStock":  true,
+        "price":  4.07,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whipped Cream",
+        "sku":  "j-011",
+        "inStock":  true,
+        "price":  2.58,
+        "category":  "dairy",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bananas",
+        "sku":  "j-012",
+        "inStock":  true,
+        "price":  1.18,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Gala",
+        "sku":  "j-013",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Granny Smith",
+        "sku":  "j-014",
+        "inStock":  true,
+        "price":  4.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oranges Valencia",
+        "sku":  "j-015",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemons",
+        "sku":  "j-016",
+        "inStock":  true,
+        "price":  2.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Limes",
+        "sku":  "j-017",
+        "inStock":  true,
+        "price":  2.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Strawberries Fresh",
+        "sku":  "j-018",
+        "inStock":  true,
+        "price":  4.07,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Blueberries",
+        "sku":  "j-019",
+        "inStock":  true,
+        "price":  5.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Raspberries",
+        "sku":  "j-020",
+        "inStock":  true,
+        "price":  5.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Grapes Red",
+        "sku":  "j-021",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Watermelon",
+        "sku":  "j-022",
+        "inStock":  true,
+        "price":  7.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cantaloupes",
+        "sku":  "j-023",
+        "inStock":  true,
+        "price":  5.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pineapple",
+        "sku":  "j-024",
+        "inStock":  true,
+        "price":  5.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mangoes",
+        "sku":  "j-025",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Beefsteak",
+        "sku":  "j-026",
+        "inStock":  true,
+        "price":  3.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Cherry",
+        "sku":  "j-027",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Red",
+        "sku":  "j-028",
+        "inStock":  true,
+        "price":  4.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Yellow",
+        "sku":  "j-029",
+        "inStock":  true,
+        "price":  4.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Green",
+        "sku":  "j-030",
+        "inStock":  true,
+        "price":  3.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cucumbers",
+        "sku":  "j-031",
+        "inStock":  true,
+        "price":  1.87,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Iceberg",
+        "sku":  "j-032",
+        "inStock":  true,
+        "price":  2.07,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Romaine",
+        "sku":  "j-033",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Spinach Fresh",
+        "sku":  "j-034",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Kale",
+        "sku":  "j-035",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Broccoli Crowns",
+        "sku":  "j-036",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cauliflower",
+        "sku":  "j-037",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Baby",
+        "sku":  "j-038",
+        "inStock":  true,
+        "price":  1.39,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Regular",
+        "sku":  "j-039",
+        "inStock":  true,
+        "price":  1.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Russet",
+        "sku":  "j-040",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Red",
+        "sku":  "j-041",
+        "inStock":  true,
+        "price":  5.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sweet Potatoes",
+        "sku":  "j-042",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Yellow",
+        "sku":  "j-043",
+        "inStock":  true,
+        "price":  2.09,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Red",
+        "sku":  "j-044",
+        "inStock":  true,
+        "price":  2.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic",
+        "sku":  "j-045",
+        "inStock":  true,
+        "price":  1.89,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Zucchini",
+        "sku":  "j-046",
+        "inStock":  true,
+        "price":  2.59,
+        "category":  "produce",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Breast Boneless",
+        "sku":  "j-047",
+        "inStock":  true,
+        "price":  3.84,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Thighs",
+        "sku":  "j-048",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Chicken",
+        "sku":  "j-049",
+        "inStock":  true,
+        "price":  4.09,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 80/20",
+        "sku":  "j-050",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 90/10",
+        "sku":  "j-051",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Steak Ribeye",
+        "sku":  "j-052",
+        "inStock":  true,
+        "price":  8.07,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Roast",
+        "sku":  "j-053",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Chops",
+        "sku":  "j-054",
+        "inStock":  true,
+        "price":  4.04,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Ground",
+        "sku":  "j-055",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Ground",
+        "sku":  "j-056",
+        "inStock":  true,
+        "price":  4.57,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Breast",
+        "sku":  "j-057",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salmon Fillet",
+        "sku":  "j-058",
+        "inStock":  true,
+        "price":  8.07,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cod Fillet",
+        "sku":  "j-059",
+        "inStock":  true,
+        "price":  7.59,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Shrimp Frozen",
+        "sku":  "j-060",
+        "inStock":  true,
+        "price":  9.57,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bacon",
+        "sku":  "j-061",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sausage Links",
+        "sku":  "j-062",
+        "inStock":  true,
+        "price":  4.87,
+        "category":  "meat",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whole Wheat Bread",
+        "sku":  "j-063",
+        "inStock":  true,
+        "price":  2.08,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "White Bread",
+        "sku":  "j-064",
+        "inStock":  true,
+        "price":  1.87,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rye Bread",
+        "sku":  "j-065",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bread Rolls",
+        "sku":  "j-066",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "English Muffins",
+        "sku":  "j-067",
+        "inStock":  true,
+        "price":  2.87,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bagels",
+        "sku":  "j-068",
+        "inStock":  true,
+        "price":  4.07,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Flour",
+        "sku":  "j-069",
+        "inStock":  true,
+        "price":  1.87,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Corn",
+        "sku":  "j-070",
+        "inStock":  true,
+        "price":  2.07,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pita Bread",
+        "sku":  "j-071",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "bakery",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Whole Grain",
+        "sku":  "j-072",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Corn Flakes",
+        "sku":  "j-073",
+        "inStock":  true,
+        "price":  2.58,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oatmeal",
+        "sku":  "j-074",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Spaghetti",
+        "sku":  "j-075",
+        "inStock":  true,
+        "price":  1.48,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Penne",
+        "sku":  "j-076",
+        "inStock":  true,
+        "price":  1.48,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice White Long Grain",
+        "sku":  "j-077",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice Brown",
+        "sku":  "j-078",
+        "inStock":  true,
+        "price":  4.59,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Black Canned",
+        "sku":  "j-079",
+        "inStock":  true,
+        "price":  1.14,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Pinto Canned",
+        "sku":  "j-080",
+        "inStock":  true,
+        "price":  1.14,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chickpeas Canned",
+        "sku":  "j-081",
+        "inStock":  true,
+        "price":  1.28,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomato Sauce Canned",
+        "sku":  "j-082",
+        "inStock":  true,
+        "price":  1.32,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Creamy",
+        "sku":  "j-083",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Crunchy",
+        "sku":  "j-084",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almond Butter",
+        "sku":  "j-085",
+        "inStock":  true,
+        "price":  5.59,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Olive Oil Extra Virgin",
+        "sku":  "j-086",
+        "inStock":  true,
+        "price":  6.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vegetable Oil",
+        "sku":  "j-087",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coconut Oil",
+        "sku":  "j-088",
+        "inStock":  true,
+        "price":  7.59,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Honey Raw",
+        "sku":  "j-089",
+        "inStock":  true,
+        "price":  6.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Grape",
+        "sku":  "j-090",
+        "inStock":  true,
+        "price":  1.89,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Strawberry",
+        "sku":  "j-091",
+        "inStock":  true,
+        "price":  1.89,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coffee Ground",
+        "sku":  "j-092",
+        "inStock":  true,
+        "price":  4.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tea Black",
+        "sku":  "j-093",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sugar Granulated",
+        "sku":  "j-094",
+        "inStock":  true,
+        "price":  2.87,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Flour All Purpose",
+        "sku":  "j-095",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Baking Powder",
+        "sku":  "j-096",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vanilla Extract",
+        "sku":  "j-097",
+        "inStock":  true,
+        "price":  8.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salt Iodized",
+        "sku":  "j-098",
+        "inStock":  true,
+        "price":  1.48,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Black Pepper Ground",
+        "sku":  "j-099",
+        "inStock":  true,
+        "price":  4.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic Powder",
+        "sku":  "j-100",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onion Powder",
+        "sku":  "j-101",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cinnamon",
+        "sku":  "j-102",
+        "inStock":  true,
+        "price":  3.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cumin",
+        "sku":  "j-103",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chili Powder",
+        "sku":  "j-104",
+        "inStock":  true,
+        "price":  2.87,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Paprika",
+        "sku":  "j-105",
+        "inStock":  true,
+        "price":  2.87,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oregano",
+        "sku":  "j-106",
+        "inStock":  true,
+        "price":  3.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Basil Fresh",
+        "sku":  "j-107",
+        "inStock":  true,
+        "price":  4.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Thyme",
+        "sku":  "j-108",
+        "inStock":  true,
+        "price":  4.07,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Italian Seasoning",
+        "sku":  "j-109",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "pantry",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Orange Juice",
+        "sku":  "j-110",
+        "inStock":  true,
+        "price":  3.57,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apple Juice",
+        "sku":  "j-111",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Water Bottled",
+        "sku":  "j-112",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Cola",
+        "sku":  "j-113",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Sprite",
+        "sku":  "j-114",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemonade",
+        "sku":  "j-115",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sports Drink Gatorade",
+        "sku":  "j-116",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "beverages",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Pizza",
+        "sku":  "j-117",
+        "inStock":  true,
+        "price":  5.57,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Vegetables Mixed",
+        "sku":  "j-118",
+        "inStock":  true,
+        "price":  2.07,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Berries",
+        "sku":  "j-119",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Chicken Breasts",
+        "sku":  "j-120",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Vanilla",
+        "sku":  "j-121",
+        "inStock":  true,
+        "price":  4.57,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Chocolate",
+        "sku":  "j-122",
+        "inStock":  true,
+        "price":  4.57,
+        "category":  "frozen",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Tortilla",
+        "sku":  "j-123",
+        "inStock":  true,
+        "price":  2.07,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Potato",
+        "sku":  "j-124",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cookies Chocolate Chip",
+        "sku":  "j-125",
+        "inStock":  true,
+        "price":  3.07,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Granola Bars",
+        "sku":  "j-126",
+        "inStock":  true,
+        "price":  2.57,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almonds Raw",
+        "sku":  "j-127",
+        "inStock":  true,
+        "price":  5.07,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mixed Nuts",
+        "sku":  "j-128",
+        "inStock":  true,
+        "price":  6.59,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Popcorn Microwave",
+        "sku":  "j-129",
+        "inStock":  true,
+        "price":  3.59,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pretzels",
+        "sku":  "j-130",
+        "inStock":  true,
+        "price":  2.59,
+        "category":  "snacks",
+        "brand":  "Jewel",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    }
 ]

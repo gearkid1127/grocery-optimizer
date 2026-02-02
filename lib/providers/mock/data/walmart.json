@@ -1,38 +1,1562 @@
 [
-  {
-    "sku": "w-001",
-    "name": "Whole Milk",
-    "brand": "Great Value",
-    "category": "dairy",
-    "size": { "value": 64, "unit": "oz" },
-    "price": 3.48,
-    "inStock": true
-  },
-  {
-    "sku": "w-002",
-    "name": "Bananas",
-    "brand": "",
-    "category": "produce",
-    "size": { "value": 1, "unit": "lb" },
-    "price": 0.58,
-    "inStock": true
-  },
-  {
-    "sku": "w-003",
-    "name": "Peanut Butter Creamy",
-    "brand": "Great Value",
-    "category": "pantry",
-    "size": { "value": 16, "unit": "oz" },
-    "price": 1.84,
-    "inStock": true
-  },
-  {
-    "sku": "w-004",
-    "name": "Chicken Breast Boneless Skinless",
-    "brand": "",
-    "category": "meat",
-    "size": { "value": 1, "unit": "lb" },
-    "price": 3.24,
-    "inStock": true
-  }
+    {
+        "name":  "Whole Milk",
+        "sku":  "w-001",
+        "inStock":  true,
+        "price":  3.48,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "2% Milk",
+        "sku":  "w-002",
+        "inStock":  true,
+        "price":  3.28,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Skim Milk",
+        "sku":  "w-003",
+        "inStock":  true,
+        "price":  3.18,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Eggs Large Grade A",
+        "sku":  "w-004",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cheddar Cheese",
+        "sku":  "w-005",
+        "inStock":  true,
+        "price":  2.38,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mozzarella Cheese",
+        "sku":  "w-006",
+        "inStock":  true,
+        "price":  2.67,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Vanilla",
+        "sku":  "w-007",
+        "inStock":  true,
+        "price":  2.98,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Greek",
+        "sku":  "w-008",
+        "inStock":  true,
+        "price":  3.27,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sour Cream",
+        "sku":  "w-009",
+        "inStock":  true,
+        "price":  1.98,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Butter Salted",
+        "sku":  "w-010",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whipped Cream",
+        "sku":  "w-011",
+        "inStock":  true,
+        "price":  1.98,
+        "category":  "dairy",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bananas",
+        "sku":  "w-012",
+        "inStock":  true,
+        "price":  0.58,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Gala",
+        "sku":  "w-013",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Granny Smith",
+        "sku":  "w-014",
+        "inStock":  true,
+        "price":  3.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oranges Valencia",
+        "sku":  "w-015",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemons",
+        "sku":  "w-016",
+        "inStock":  true,
+        "price":  1.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Limes",
+        "sku":  "w-017",
+        "inStock":  true,
+        "price":  1.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Strawberries Fresh",
+        "sku":  "w-018",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Blueberries",
+        "sku":  "w-019",
+        "inStock":  true,
+        "price":  4.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Raspberries",
+        "sku":  "w-020",
+        "inStock":  true,
+        "price":  4.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Grapes Red",
+        "sku":  "w-021",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Watermelon",
+        "sku":  "w-022",
+        "inStock":  true,
+        "price":  6.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cantaloupes",
+        "sku":  "w-023",
+        "inStock":  true,
+        "price":  4.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pineapple",
+        "sku":  "w-024",
+        "inStock":  true,
+        "price":  4.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mangoes",
+        "sku":  "w-025",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Beefsteak",
+        "sku":  "w-026",
+        "inStock":  true,
+        "price":  2.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Cherry",
+        "sku":  "w-027",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Red",
+        "sku":  "w-028",
+        "inStock":  true,
+        "price":  3.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Yellow",
+        "sku":  "w-029",
+        "inStock":  true,
+        "price":  3.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Green",
+        "sku":  "w-030",
+        "inStock":  true,
+        "price":  2.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cucumbers",
+        "sku":  "w-031",
+        "inStock":  true,
+        "price":  1.27,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Iceberg",
+        "sku":  "w-032",
+        "inStock":  true,
+        "price":  1.47,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Romaine",
+        "sku":  "w-033",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Spinach Fresh",
+        "sku":  "w-034",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Kale",
+        "sku":  "w-035",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Broccoli Crowns",
+        "sku":  "w-036",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cauliflower",
+        "sku":  "w-037",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Baby",
+        "sku":  "w-038",
+        "inStock":  true,
+        "price":  0.79,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Regular",
+        "sku":  "w-039",
+        "inStock":  true,
+        "price":  0.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Russet",
+        "sku":  "w-040",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Red",
+        "sku":  "w-041",
+        "inStock":  true,
+        "price":  4.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sweet Potatoes",
+        "sku":  "w-042",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Yellow",
+        "sku":  "w-043",
+        "inStock":  true,
+        "price":  1.49,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Red",
+        "sku":  "w-044",
+        "inStock":  true,
+        "price":  1.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic",
+        "sku":  "w-045",
+        "inStock":  true,
+        "price":  1.29,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Zucchini",
+        "sku":  "w-046",
+        "inStock":  true,
+        "price":  1.99,
+        "category":  "produce",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Breast Boneless",
+        "sku":  "w-047",
+        "inStock":  true,
+        "price":  3.24,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Thighs",
+        "sku":  "w-048",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Chicken",
+        "sku":  "w-049",
+        "inStock":  true,
+        "price":  3.49,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 80/20",
+        "sku":  "w-050",
+        "inStock":  true,
+        "price":  4.94,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 90/10",
+        "sku":  "w-051",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Steak Ribeye",
+        "sku":  "w-052",
+        "inStock":  true,
+        "price":  7.47,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Roast",
+        "sku":  "w-053",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Chops",
+        "sku":  "w-054",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Ground",
+        "sku":  "w-055",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Ground",
+        "sku":  "w-056",
+        "inStock":  true,
+        "price":  3.97,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Breast",
+        "sku":  "w-057",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salmon Fillet",
+        "sku":  "w-058",
+        "inStock":  true,
+        "price":  7.47,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cod Fillet",
+        "sku":  "w-059",
+        "inStock":  true,
+        "price":  6.99,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Shrimp Frozen",
+        "sku":  "w-060",
+        "inStock":  true,
+        "price":  8.97,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bacon",
+        "sku":  "w-061",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sausage Links",
+        "sku":  "w-062",
+        "inStock":  true,
+        "price":  4.27,
+        "category":  "meat",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whole Wheat Bread",
+        "sku":  "w-063",
+        "inStock":  true,
+        "price":  1.48,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "White Bread",
+        "sku":  "w-064",
+        "inStock":  true,
+        "price":  1.27,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rye Bread",
+        "sku":  "w-065",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bread Rolls",
+        "sku":  "w-066",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "English Muffins",
+        "sku":  "w-067",
+        "inStock":  true,
+        "price":  2.27,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bagels",
+        "sku":  "w-068",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Flour",
+        "sku":  "w-069",
+        "inStock":  true,
+        "price":  1.27,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Corn",
+        "sku":  "w-070",
+        "inStock":  true,
+        "price":  1.47,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pita Bread",
+        "sku":  "w-071",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "bakery",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Whole Grain",
+        "sku":  "w-072",
+        "inStock":  true,
+        "price":  2.87,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Corn Flakes",
+        "sku":  "w-073",
+        "inStock":  true,
+        "price":  1.98,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oatmeal",
+        "sku":  "w-074",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Spaghetti",
+        "sku":  "w-075",
+        "inStock":  true,
+        "price":  0.88,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Penne",
+        "sku":  "w-076",
+        "inStock":  true,
+        "price":  0.88,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice White Long Grain",
+        "sku":  "w-077",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice Brown",
+        "sku":  "w-078",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Black Canned",
+        "sku":  "w-079",
+        "inStock":  true,
+        "price":  0.54,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Pinto Canned",
+        "sku":  "w-080",
+        "inStock":  true,
+        "price":  0.54,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chickpeas Canned",
+        "sku":  "w-081",
+        "inStock":  true,
+        "price":  0.68,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomato Sauce Canned",
+        "sku":  "w-082",
+        "inStock":  true,
+        "price":  0.72,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Creamy",
+        "sku":  "w-083",
+        "inStock":  true,
+        "price":  1.84,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Crunchy",
+        "sku":  "w-084",
+        "inStock":  true,
+        "price":  1.84,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almond Butter",
+        "sku":  "w-085",
+        "inStock":  true,
+        "price":  4.99,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Olive Oil Extra Virgin",
+        "sku":  "w-086",
+        "inStock":  true,
+        "price":  5.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vegetable Oil",
+        "sku":  "w-087",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coconut Oil",
+        "sku":  "w-088",
+        "inStock":  true,
+        "price":  6.99,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Honey Raw",
+        "sku":  "w-089",
+        "inStock":  true,
+        "price":  5.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Grape",
+        "sku":  "w-090",
+        "inStock":  true,
+        "price":  1.29,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Strawberry",
+        "sku":  "w-091",
+        "inStock":  true,
+        "price":  1.29,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coffee Ground",
+        "sku":  "w-092",
+        "inStock":  true,
+        "price":  3.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tea Black",
+        "sku":  "w-093",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sugar Granulated",
+        "sku":  "w-094",
+        "inStock":  true,
+        "price":  2.27,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Flour All Purpose",
+        "sku":  "w-095",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Baking Powder",
+        "sku":  "w-096",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vanilla Extract",
+        "sku":  "w-097",
+        "inStock":  true,
+        "price":  7.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salt Iodized",
+        "sku":  "w-098",
+        "inStock":  true,
+        "price":  0.88,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Black Pepper Ground",
+        "sku":  "w-099",
+        "inStock":  true,
+        "price":  3.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic Powder",
+        "sku":  "w-100",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onion Powder",
+        "sku":  "w-101",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cinnamon",
+        "sku":  "w-102",
+        "inStock":  true,
+        "price":  2.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cumin",
+        "sku":  "w-103",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chili Powder",
+        "sku":  "w-104",
+        "inStock":  true,
+        "price":  2.27,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Paprika",
+        "sku":  "w-105",
+        "inStock":  true,
+        "price":  2.27,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oregano",
+        "sku":  "w-106",
+        "inStock":  true,
+        "price":  2.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Basil Fresh",
+        "sku":  "w-107",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Thyme",
+        "sku":  "w-108",
+        "inStock":  true,
+        "price":  3.47,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Italian Seasoning",
+        "sku":  "w-109",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "pantry",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Orange Juice",
+        "sku":  "w-110",
+        "inStock":  true,
+        "price":  2.97,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apple Juice",
+        "sku":  "w-111",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Water Bottled",
+        "sku":  "w-112",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Cola",
+        "sku":  "w-113",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Sprite",
+        "sku":  "w-114",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemonade",
+        "sku":  "w-115",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sports Drink Gatorade",
+        "sku":  "w-116",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "beverages",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Pizza",
+        "sku":  "w-117",
+        "inStock":  true,
+        "price":  4.97,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Vegetables Mixed",
+        "sku":  "w-118",
+        "inStock":  true,
+        "price":  1.47,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Berries",
+        "sku":  "w-119",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Chicken Breasts",
+        "sku":  "w-120",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Vanilla",
+        "sku":  "w-121",
+        "inStock":  true,
+        "price":  3.97,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Chocolate",
+        "sku":  "w-122",
+        "inStock":  true,
+        "price":  3.97,
+        "category":  "frozen",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Tortilla",
+        "sku":  "w-123",
+        "inStock":  true,
+        "price":  1.47,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Potato",
+        "sku":  "w-124",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cookies Chocolate Chip",
+        "sku":  "w-125",
+        "inStock":  true,
+        "price":  2.47,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Granola Bars",
+        "sku":  "w-126",
+        "inStock":  true,
+        "price":  1.97,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almonds Raw",
+        "sku":  "w-127",
+        "inStock":  true,
+        "price":  4.47,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mixed Nuts",
+        "sku":  "w-128",
+        "inStock":  true,
+        "price":  5.99,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Popcorn Microwave",
+        "sku":  "w-129",
+        "inStock":  true,
+        "price":  2.99,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pretzels",
+        "sku":  "w-130",
+        "inStock":  true,
+        "price":  1.99,
+        "category":  "snacks",
+        "brand":  "Great Value",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    }
 ]

@@ -1,38 +1,1562 @@
 [
-  {
-    "sku": "p-001",
-    "name": "Whole Milk",
-    "brand": "Pete's",
-    "category": "dairy",
-    "size": { "value": 64, "unit": "oz" },
-    "price": 4.29,
-    "inStock": true
-  },
-  {
-    "sku": "p-002",
-    "name": "Vanilla Ice Cream",
-    "brand": "Pete's",
-    "category": "frozen",
-    "size": { "value": 48, "unit": "oz" },
-    "price": 4.99,
-    "inStock": true
-  },
-  {
-    "sku": "p-003",
-    "name": "White Bread",
-    "brand": "Pete's",
-    "category": "bakery",
-    "size": { "value": 20, "unit": "oz" },
-    "price": 2.49,
-    "inStock": true
-  },
-  {
-    "sku": "p-004",
-    "name": "Bananas",
-    "brand": "Fresh",
-    "category": "produce",
-    "size": { "value": 1, "unit": "lb" },
-    "price": 0.99,
-    "inStock": true
-  }
+    {
+        "name":  "Whole Milk",
+        "sku":  "p-001",
+        "inStock":  true,
+        "price":  3.93,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "2% Milk",
+        "sku":  "p-002",
+        "inStock":  true,
+        "price":  3.73,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Skim Milk",
+        "sku":  "p-003",
+        "inStock":  true,
+        "price":  3.63,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Eggs Large Grade A",
+        "sku":  "p-004",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cheddar Cheese",
+        "sku":  "p-005",
+        "inStock":  true,
+        "price":  2.83,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mozzarella Cheese",
+        "sku":  "p-006",
+        "inStock":  true,
+        "price":  3.12,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Vanilla",
+        "sku":  "p-007",
+        "inStock":  true,
+        "price":  3.43,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Greek",
+        "sku":  "p-008",
+        "inStock":  true,
+        "price":  3.72,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sour Cream",
+        "sku":  "p-009",
+        "inStock":  true,
+        "price":  2.43,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Butter Salted",
+        "sku":  "p-010",
+        "inStock":  true,
+        "price":  3.92,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whipped Cream",
+        "sku":  "p-011",
+        "inStock":  true,
+        "price":  2.43,
+        "category":  "dairy",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bananas",
+        "sku":  "p-012",
+        "inStock":  true,
+        "price":  1.03,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Gala",
+        "sku":  "p-013",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Granny Smith",
+        "sku":  "p-014",
+        "inStock":  true,
+        "price":  3.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oranges Valencia",
+        "sku":  "p-015",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemons",
+        "sku":  "p-016",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Limes",
+        "sku":  "p-017",
+        "inStock":  true,
+        "price":  1.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Strawberries Fresh",
+        "sku":  "p-018",
+        "inStock":  true,
+        "price":  3.92,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Blueberries",
+        "sku":  "p-019",
+        "inStock":  true,
+        "price":  5.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Raspberries",
+        "sku":  "p-020",
+        "inStock":  true,
+        "price":  4.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Grapes Red",
+        "sku":  "p-021",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Watermelon",
+        "sku":  "p-022",
+        "inStock":  true,
+        "price":  7.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cantaloupes",
+        "sku":  "p-023",
+        "inStock":  true,
+        "price":  5.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pineapple",
+        "sku":  "p-024",
+        "inStock":  true,
+        "price":  5.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mangoes",
+        "sku":  "p-025",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Beefsteak",
+        "sku":  "p-026",
+        "inStock":  true,
+        "price":  2.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Cherry",
+        "sku":  "p-027",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Red",
+        "sku":  "p-028",
+        "inStock":  true,
+        "price":  3.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Yellow",
+        "sku":  "p-029",
+        "inStock":  true,
+        "price":  3.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Green",
+        "sku":  "p-030",
+        "inStock":  true,
+        "price":  2.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cucumbers",
+        "sku":  "p-031",
+        "inStock":  true,
+        "price":  1.72,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Iceberg",
+        "sku":  "p-032",
+        "inStock":  true,
+        "price":  1.92,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Romaine",
+        "sku":  "p-033",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Spinach Fresh",
+        "sku":  "p-034",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Kale",
+        "sku":  "p-035",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Broccoli Crowns",
+        "sku":  "p-036",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cauliflower",
+        "sku":  "p-037",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Baby",
+        "sku":  "p-038",
+        "inStock":  true,
+        "price":  1.24,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Regular",
+        "sku":  "p-039",
+        "inStock":  true,
+        "price":  1.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Russet",
+        "sku":  "p-040",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Red",
+        "sku":  "p-041",
+        "inStock":  true,
+        "price":  5.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sweet Potatoes",
+        "sku":  "p-042",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Yellow",
+        "sku":  "p-043",
+        "inStock":  true,
+        "price":  1.94,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Red",
+        "sku":  "p-044",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic",
+        "sku":  "p-045",
+        "inStock":  true,
+        "price":  1.74,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Zucchini",
+        "sku":  "p-046",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "produce",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Breast Boneless",
+        "sku":  "p-047",
+        "inStock":  true,
+        "price":  3.69,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Thighs",
+        "sku":  "p-048",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Chicken",
+        "sku":  "p-049",
+        "inStock":  true,
+        "price":  3.94,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 80/20",
+        "sku":  "p-050",
+        "inStock":  true,
+        "price":  5.39,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 90/10",
+        "sku":  "p-051",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Steak Ribeye",
+        "sku":  "p-052",
+        "inStock":  true,
+        "price":  7.92,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Roast",
+        "sku":  "p-053",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Chops",
+        "sku":  "p-054",
+        "inStock":  true,
+        "price":  3.89,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Ground",
+        "sku":  "p-055",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Ground",
+        "sku":  "p-056",
+        "inStock":  true,
+        "price":  4.42,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Breast",
+        "sku":  "p-057",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salmon Fillet",
+        "sku":  "p-058",
+        "inStock":  true,
+        "price":  7.92,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cod Fillet",
+        "sku":  "p-059",
+        "inStock":  true,
+        "price":  7.44,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Shrimp Frozen",
+        "sku":  "p-060",
+        "inStock":  true,
+        "price":  9.42,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bacon",
+        "sku":  "p-061",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sausage Links",
+        "sku":  "p-062",
+        "inStock":  true,
+        "price":  4.72,
+        "category":  "meat",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whole Wheat Bread",
+        "sku":  "p-063",
+        "inStock":  true,
+        "price":  1.93,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "White Bread",
+        "sku":  "p-064",
+        "inStock":  true,
+        "price":  1.72,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rye Bread",
+        "sku":  "p-065",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bread Rolls",
+        "sku":  "p-066",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "English Muffins",
+        "sku":  "p-067",
+        "inStock":  true,
+        "price":  2.72,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bagels",
+        "sku":  "p-068",
+        "inStock":  true,
+        "price":  3.92,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Flour",
+        "sku":  "p-069",
+        "inStock":  true,
+        "price":  1.72,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Corn",
+        "sku":  "p-070",
+        "inStock":  true,
+        "price":  1.92,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pita Bread",
+        "sku":  "p-071",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "bakery",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Whole Grain",
+        "sku":  "p-072",
+        "inStock":  true,
+        "price":  3.32,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Corn Flakes",
+        "sku":  "p-073",
+        "inStock":  true,
+        "price":  2.43,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oatmeal",
+        "sku":  "p-074",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Spaghetti",
+        "sku":  "p-075",
+        "inStock":  true,
+        "price":  1.33,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Penne",
+        "sku":  "p-076",
+        "inStock":  true,
+        "price":  1.33,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice White Long Grain",
+        "sku":  "p-077",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice Brown",
+        "sku":  "p-078",
+        "inStock":  true,
+        "price":  4.44,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Black Canned",
+        "sku":  "p-079",
+        "inStock":  true,
+        "price":  0.99,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Pinto Canned",
+        "sku":  "p-080",
+        "inStock":  true,
+        "price":  0.99,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chickpeas Canned",
+        "sku":  "p-081",
+        "inStock":  true,
+        "price":  1.13,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomato Sauce Canned",
+        "sku":  "p-082",
+        "inStock":  true,
+        "price":  1.17,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Creamy",
+        "sku":  "p-083",
+        "inStock":  true,
+        "price":  2.29,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Crunchy",
+        "sku":  "p-084",
+        "inStock":  true,
+        "price":  2.29,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almond Butter",
+        "sku":  "p-085",
+        "inStock":  true,
+        "price":  5.44,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Olive Oil Extra Virgin",
+        "sku":  "p-086",
+        "inStock":  true,
+        "price":  5.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vegetable Oil",
+        "sku":  "p-087",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coconut Oil",
+        "sku":  "p-088",
+        "inStock":  true,
+        "price":  7.44,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Honey Raw",
+        "sku":  "p-089",
+        "inStock":  true,
+        "price":  6.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Grape",
+        "sku":  "p-090",
+        "inStock":  true,
+        "price":  1.74,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Strawberry",
+        "sku":  "p-091",
+        "inStock":  true,
+        "price":  1.74,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coffee Ground",
+        "sku":  "p-092",
+        "inStock":  true,
+        "price":  4.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tea Black",
+        "sku":  "p-093",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sugar Granulated",
+        "sku":  "p-094",
+        "inStock":  true,
+        "price":  2.72,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Flour All Purpose",
+        "sku":  "p-095",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Baking Powder",
+        "sku":  "p-096",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vanilla Extract",
+        "sku":  "p-097",
+        "inStock":  true,
+        "price":  8.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salt Iodized",
+        "sku":  "p-098",
+        "inStock":  true,
+        "price":  1.33,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Black Pepper Ground",
+        "sku":  "p-099",
+        "inStock":  true,
+        "price":  4.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic Powder",
+        "sku":  "p-100",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onion Powder",
+        "sku":  "p-101",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cinnamon",
+        "sku":  "p-102",
+        "inStock":  true,
+        "price":  3.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cumin",
+        "sku":  "p-103",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chili Powder",
+        "sku":  "p-104",
+        "inStock":  true,
+        "price":  2.72,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Paprika",
+        "sku":  "p-105",
+        "inStock":  true,
+        "price":  2.72,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oregano",
+        "sku":  "p-106",
+        "inStock":  true,
+        "price":  3.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Basil Fresh",
+        "sku":  "p-107",
+        "inStock":  true,
+        "price":  3.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Thyme",
+        "sku":  "p-108",
+        "inStock":  true,
+        "price":  3.92,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Italian Seasoning",
+        "sku":  "p-109",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "pantry",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Orange Juice",
+        "sku":  "p-110",
+        "inStock":  true,
+        "price":  3.42,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apple Juice",
+        "sku":  "p-111",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Water Bottled",
+        "sku":  "p-112",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Cola",
+        "sku":  "p-113",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Sprite",
+        "sku":  "p-114",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemonade",
+        "sku":  "p-115",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sports Drink Gatorade",
+        "sku":  "p-116",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "beverages",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Pizza",
+        "sku":  "p-117",
+        "inStock":  true,
+        "price":  5.42,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Vegetables Mixed",
+        "sku":  "p-118",
+        "inStock":  true,
+        "price":  1.92,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Berries",
+        "sku":  "p-119",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Chicken Breasts",
+        "sku":  "p-120",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Vanilla",
+        "sku":  "p-121",
+        "inStock":  true,
+        "price":  4.42,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Chocolate",
+        "sku":  "p-122",
+        "inStock":  true,
+        "price":  4.42,
+        "category":  "frozen",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Tortilla",
+        "sku":  "p-123",
+        "inStock":  true,
+        "price":  1.92,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Potato",
+        "sku":  "p-124",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cookies Chocolate Chip",
+        "sku":  "p-125",
+        "inStock":  true,
+        "price":  2.92,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Granola Bars",
+        "sku":  "p-126",
+        "inStock":  true,
+        "price":  2.42,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almonds Raw",
+        "sku":  "p-127",
+        "inStock":  true,
+        "price":  4.92,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mixed Nuts",
+        "sku":  "p-128",
+        "inStock":  true,
+        "price":  6.44,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Popcorn Microwave",
+        "sku":  "p-129",
+        "inStock":  true,
+        "price":  3.44,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pretzels",
+        "sku":  "p-130",
+        "inStock":  true,
+        "price":  2.44,
+        "category":  "snacks",
+        "brand":  "Pete\u0027s",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    }
 ]

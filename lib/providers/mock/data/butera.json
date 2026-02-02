@@ -1,38 +1,1562 @@
 [
-  {
-    "sku": "b-001",
-    "name": "Whole Milk",
-    "brand": "Butera",
-    "category": "dairy",
-    "size": { "value": 64, "unit": "oz" },
-    "price": 4.19,
-    "inStock": true
-  },
-  {
-    "sku": "b-002",
-    "name": "Vanilla Ice Cream",
-    "brand": "Butera",
-    "category": "frozen",
-    "size": { "value": 48, "unit": "oz" },
-    "price": 4.79,
-    "inStock": true
-  },
-  {
-    "sku": "b-003",
-    "name": "White Bread",
-    "brand": "Butera",
-    "category": "bakery",
-    "size": { "value": 20, "unit": "oz" },
-    "price": 2.29,
-    "inStock": true
-  },
-  {
-    "sku": "b-004",
-    "name": "Bananas",
-    "brand": "Fresh",
-    "category": "produce",
-    "size": { "value": 1, "unit": "lb" },
-    "price": 0.79,
-    "inStock": true
-  }
+    {
+        "name":  "Whole Milk",
+        "sku":  "b-001",
+        "inStock":  true,
+        "price":  4.03,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "2% Milk",
+        "sku":  "b-002",
+        "inStock":  true,
+        "price":  3.83,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Skim Milk",
+        "sku":  "b-003",
+        "inStock":  true,
+        "price":  3.73,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Eggs Large Grade A",
+        "sku":  "b-004",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cheddar Cheese",
+        "sku":  "b-005",
+        "inStock":  true,
+        "price":  2.93,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mozzarella Cheese",
+        "sku":  "b-006",
+        "inStock":  true,
+        "price":  3.22,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Vanilla",
+        "sku":  "b-007",
+        "inStock":  true,
+        "price":  3.53,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Yogurt Greek",
+        "sku":  "b-008",
+        "inStock":  true,
+        "price":  3.82,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sour Cream",
+        "sku":  "b-009",
+        "inStock":  true,
+        "price":  2.53,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Butter Salted",
+        "sku":  "b-010",
+        "inStock":  true,
+        "price":  4.02,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whipped Cream",
+        "sku":  "b-011",
+        "inStock":  true,
+        "price":  2.53,
+        "category":  "dairy",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bananas",
+        "sku":  "b-012",
+        "inStock":  true,
+        "price":  1.13,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Gala",
+        "sku":  "b-013",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apples Granny Smith",
+        "sku":  "b-014",
+        "inStock":  true,
+        "price":  4.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oranges Valencia",
+        "sku":  "b-015",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemons",
+        "sku":  "b-016",
+        "inStock":  true,
+        "price":  2.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Limes",
+        "sku":  "b-017",
+        "inStock":  true,
+        "price":  2.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Strawberries Fresh",
+        "sku":  "b-018",
+        "inStock":  true,
+        "price":  4.02,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Blueberries",
+        "sku":  "b-019",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Raspberries",
+        "sku":  "b-020",
+        "inStock":  true,
+        "price":  5.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Grapes Red",
+        "sku":  "b-021",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Watermelon",
+        "sku":  "b-022",
+        "inStock":  true,
+        "price":  7.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cantaloupes",
+        "sku":  "b-023",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pineapple",
+        "sku":  "b-024",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mangoes",
+        "sku":  "b-025",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Beefsteak",
+        "sku":  "b-026",
+        "inStock":  true,
+        "price":  3.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomatoes Cherry",
+        "sku":  "b-027",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Red",
+        "sku":  "b-028",
+        "inStock":  true,
+        "price":  4.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Yellow",
+        "sku":  "b-029",
+        "inStock":  true,
+        "price":  4.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bell Peppers Green",
+        "sku":  "b-030",
+        "inStock":  true,
+        "price":  3.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cucumbers",
+        "sku":  "b-031",
+        "inStock":  true,
+        "price":  1.82,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Iceberg",
+        "sku":  "b-032",
+        "inStock":  true,
+        "price":  2.02,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lettuce Romaine",
+        "sku":  "b-033",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Spinach Fresh",
+        "sku":  "b-034",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Kale",
+        "sku":  "b-035",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Broccoli Crowns",
+        "sku":  "b-036",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cauliflower",
+        "sku":  "b-037",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Baby",
+        "sku":  "b-038",
+        "inStock":  true,
+        "price":  1.34,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Carrots Regular",
+        "sku":  "b-039",
+        "inStock":  true,
+        "price":  1.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Russet",
+        "sku":  "b-040",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Potatoes Red",
+        "sku":  "b-041",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sweet Potatoes",
+        "sku":  "b-042",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Yellow",
+        "sku":  "b-043",
+        "inStock":  true,
+        "price":  2.04,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onions Red",
+        "sku":  "b-044",
+        "inStock":  true,
+        "price":  2.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic",
+        "sku":  "b-045",
+        "inStock":  true,
+        "price":  1.84,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Zucchini",
+        "sku":  "b-046",
+        "inStock":  true,
+        "price":  2.54,
+        "category":  "produce",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Breast Boneless",
+        "sku":  "b-047",
+        "inStock":  true,
+        "price":  3.79,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chicken Thighs",
+        "sku":  "b-048",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Chicken",
+        "sku":  "b-049",
+        "inStock":  true,
+        "price":  4.04,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 80/20",
+        "sku":  "b-050",
+        "inStock":  true,
+        "price":  5.49,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ground Beef 90/10",
+        "sku":  "b-051",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Steak Ribeye",
+        "sku":  "b-052",
+        "inStock":  true,
+        "price":  8.02,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beef Roast",
+        "sku":  "b-053",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Chops",
+        "sku":  "b-054",
+        "inStock":  true,
+        "price":  3.99,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pork Ground",
+        "sku":  "b-055",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Ground",
+        "sku":  "b-056",
+        "inStock":  true,
+        "price":  4.52,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Turkey Breast",
+        "sku":  "b-057",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salmon Fillet",
+        "sku":  "b-058",
+        "inStock":  true,
+        "price":  8.02,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cod Fillet",
+        "sku":  "b-059",
+        "inStock":  true,
+        "price":  7.54,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Shrimp Frozen",
+        "sku":  "b-060",
+        "inStock":  true,
+        "price":  9.52,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bacon",
+        "sku":  "b-061",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sausage Links",
+        "sku":  "b-062",
+        "inStock":  true,
+        "price":  4.82,
+        "category":  "meat",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Whole Wheat Bread",
+        "sku":  "b-063",
+        "inStock":  true,
+        "price":  2.03,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "White Bread",
+        "sku":  "b-064",
+        "inStock":  true,
+        "price":  1.82,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rye Bread",
+        "sku":  "b-065",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bread Rolls",
+        "sku":  "b-066",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "English Muffins",
+        "sku":  "b-067",
+        "inStock":  true,
+        "price":  2.82,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Bagels",
+        "sku":  "b-068",
+        "inStock":  true,
+        "price":  4.02,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Flour",
+        "sku":  "b-069",
+        "inStock":  true,
+        "price":  1.82,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tortillas Corn",
+        "sku":  "b-070",
+        "inStock":  true,
+        "price":  2.02,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pita Bread",
+        "sku":  "b-071",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "bakery",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Whole Grain",
+        "sku":  "b-072",
+        "inStock":  true,
+        "price":  3.42,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cereal Corn Flakes",
+        "sku":  "b-073",
+        "inStock":  true,
+        "price":  2.53,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oatmeal",
+        "sku":  "b-074",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Spaghetti",
+        "sku":  "b-075",
+        "inStock":  true,
+        "price":  1.43,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pasta Penne",
+        "sku":  "b-076",
+        "inStock":  true,
+        "price":  1.43,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice White Long Grain",
+        "sku":  "b-077",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Rice Brown",
+        "sku":  "b-078",
+        "inStock":  true,
+        "price":  4.54,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Black Canned",
+        "sku":  "b-079",
+        "inStock":  true,
+        "price":  1.09,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Beans Pinto Canned",
+        "sku":  "b-080",
+        "inStock":  true,
+        "price":  1.09,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chickpeas Canned",
+        "sku":  "b-081",
+        "inStock":  true,
+        "price":  1.23,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tomato Sauce Canned",
+        "sku":  "b-082",
+        "inStock":  true,
+        "price":  1.27,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Creamy",
+        "sku":  "b-083",
+        "inStock":  true,
+        "price":  2.39,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Peanut Butter Crunchy",
+        "sku":  "b-084",
+        "inStock":  true,
+        "price":  2.39,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almond Butter",
+        "sku":  "b-085",
+        "inStock":  true,
+        "price":  5.54,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Olive Oil Extra Virgin",
+        "sku":  "b-086",
+        "inStock":  true,
+        "price":  6.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vegetable Oil",
+        "sku":  "b-087",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coconut Oil",
+        "sku":  "b-088",
+        "inStock":  true,
+        "price":  7.54,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Honey Raw",
+        "sku":  "b-089",
+        "inStock":  true,
+        "price":  6.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Grape",
+        "sku":  "b-090",
+        "inStock":  true,
+        "price":  1.84,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Jelly Strawberry",
+        "sku":  "b-091",
+        "inStock":  true,
+        "price":  1.84,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Coffee Ground",
+        "sku":  "b-092",
+        "inStock":  true,
+        "price":  4.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Tea Black",
+        "sku":  "b-093",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sugar Granulated",
+        "sku":  "b-094",
+        "inStock":  true,
+        "price":  2.82,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Flour All Purpose",
+        "sku":  "b-095",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Baking Powder",
+        "sku":  "b-096",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Vanilla Extract",
+        "sku":  "b-097",
+        "inStock":  true,
+        "price":  8.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Salt Iodized",
+        "sku":  "b-098",
+        "inStock":  true,
+        "price":  1.43,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Black Pepper Ground",
+        "sku":  "b-099",
+        "inStock":  true,
+        "price":  4.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Garlic Powder",
+        "sku":  "b-100",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Onion Powder",
+        "sku":  "b-101",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cinnamon",
+        "sku":  "b-102",
+        "inStock":  true,
+        "price":  3.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cumin",
+        "sku":  "b-103",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chili Powder",
+        "sku":  "b-104",
+        "inStock":  true,
+        "price":  2.82,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Paprika",
+        "sku":  "b-105",
+        "inStock":  true,
+        "price":  2.82,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Oregano",
+        "sku":  "b-106",
+        "inStock":  true,
+        "price":  3.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Basil Fresh",
+        "sku":  "b-107",
+        "inStock":  true,
+        "price":  4.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Thyme",
+        "sku":  "b-108",
+        "inStock":  true,
+        "price":  4.02,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Italian Seasoning",
+        "sku":  "b-109",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "pantry",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Orange Juice",
+        "sku":  "b-110",
+        "inStock":  true,
+        "price":  3.52,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Apple Juice",
+        "sku":  "b-111",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Water Bottled",
+        "sku":  "b-112",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Cola",
+        "sku":  "b-113",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Soda Sprite",
+        "sku":  "b-114",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Lemonade",
+        "sku":  "b-115",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Sports Drink Gatorade",
+        "sku":  "b-116",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "beverages",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Pizza",
+        "sku":  "b-117",
+        "inStock":  true,
+        "price":  5.52,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Vegetables Mixed",
+        "sku":  "b-118",
+        "inStock":  true,
+        "price":  2.02,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Berries",
+        "sku":  "b-119",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Frozen Chicken Breasts",
+        "sku":  "b-120",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Vanilla",
+        "sku":  "b-121",
+        "inStock":  true,
+        "price":  4.52,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Ice Cream Chocolate",
+        "sku":  "b-122",
+        "inStock":  true,
+        "price":  4.52,
+        "category":  "frozen",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Tortilla",
+        "sku":  "b-123",
+        "inStock":  true,
+        "price":  2.02,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Chips Potato",
+        "sku":  "b-124",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Cookies Chocolate Chip",
+        "sku":  "b-125",
+        "inStock":  true,
+        "price":  3.02,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Granola Bars",
+        "sku":  "b-126",
+        "inStock":  true,
+        "price":  2.52,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Almonds Raw",
+        "sku":  "b-127",
+        "inStock":  true,
+        "price":  5.02,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Mixed Nuts",
+        "sku":  "b-128",
+        "inStock":  true,
+        "price":  6.54,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Popcorn Microwave",
+        "sku":  "b-129",
+        "inStock":  true,
+        "price":  3.54,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    },
+    {
+        "name":  "Pretzels",
+        "sku":  "b-130",
+        "inStock":  true,
+        "price":  2.54,
+        "category":  "snacks",
+        "brand":  "Butera",
+        "size":  {
+                     "unit":  "lb",
+                     "value":  1
+                 }
+    }
 ]

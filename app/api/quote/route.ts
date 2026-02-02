@@ -27,7 +27,7 @@ const BodySchema = z.object({
     walmart: z.string().optional(),
     target: z.string().optional(),
   }).optional(),
-  maxStores: z.union([z.literal(1), z.literal(2)]),
+  maxStores: z.union([z.literal(1), z.literal(2)]).optional().default(2),
 });
 
 export async function POST(req: Request) {

@@ -75,9 +75,8 @@ export class WalmartProvider implements PricingProvider {
 
   private async searchWalmartAPI(query: string, storeLocationId?: string): Promise<any[]> {
     try {
-      // Using Walmart's public search API
-      // Note: Using localhost URL for server-side fetch
-      let apiUrl = `http://localhost:3000/api/walmart/search?query=${encodeURIComponent(query)}`;
+      // Using Walmart's public search API via relative URL
+      let apiUrl = `/api/walmart/search?query=${encodeURIComponent(query)}`;
       if (storeLocationId) {
         apiUrl += `&storeId=${encodeURIComponent(storeLocationId)}`;
       }

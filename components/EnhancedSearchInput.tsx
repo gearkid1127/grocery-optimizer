@@ -14,6 +14,7 @@ interface EnhancedSearchInputProps {
     price: number;
     inStock: boolean;
   }) => void;
+  isFlexible: boolean;
   selectedStores: StoreId[];
   selectedStoreLocations?: {
     walmart: string;
@@ -21,11 +22,10 @@ interface EnhancedSearchInputProps {
   };
 }
 
-export function EnhancedSearchInput({ onAddItem, selectedStores, selectedStoreLocations }: EnhancedSearchInputProps) {
+export function EnhancedSearchInput({ onAddItem, isFlexible, selectedStores, selectedStoreLocations }: EnhancedSearchInputProps) {
   // Mark selectedStoreLocations as unused to avoid linting error
   void selectedStoreLocations;
   const [query, setQuery] = useState('');
-  const [isFlexible, setIsFlexible] = useState(true);
   const [manuallyHidden, setManuallyHidden] = useState(false);
   const [suggestions, setSuggestions] = useState<SearchSuggestion[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -354,9 +354,9 @@ export function EnhancedSearchInput({ onAddItem, selectedStores, selectedStoreLo
 
   return (
     <div className="relative">
-      <div className="flex gap-3">
+      <div className="space-y-4">
         {/* Search Input */}
-        <div className="flex-1 relative">
+        <div className="relative">
           <input
             ref={inputRef}
             value={query}
@@ -372,7 +372,7 @@ export function EnhancedSearchInput({ onAddItem, selectedStores, selectedStoreLo
                 ? "Add grocery item (e.g. milk, bread) - AI will suggest alternatives"
                 : "Search for specific products and brands (e.g. Horizon Organic milk)..."
             }
-            className="input-modern pr-10"
+            className="input-modern pr-28"
           />
           
           {/* Search Loading Indicator */}
@@ -381,40 +381,17 @@ export function EnhancedSearchInput({ onAddItem, selectedStores, selectedStoreLo
               <div className="w-4 h-4 border-2 border-blue-600/30 border-t-blue-600 rounded-full animate-spin"></div>
             </div>
           )}
-        </div>
 
-        {/* Flexible/Specific Toggle */}
-        <div className="flex items-center gap-2 px-4 py-3 bg-white/60 border border-white/30 rounded-xl shadow-lg backdrop-blur-sm">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={!isFlexible}
-              onChange={(e) => setIsFlexible(!e.target.checked)}
-              className="w-4 h-4 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
-            />
-            <span className="text-sm font-medium text-slate-700">
-              {isFlexible ? (
-                <span className="flex items-center gap-1">
-                  <span className="text-green-600">✓</span> Flexible
-                </span>
-              ) : (
-                <span className="flex items-center gap-1">
-                  <span className="text-blue-600">🎯</span> Specific
-                </span>
-              )}
-            </span>
-          </label>
+          {/* Add Button (inside input) */}
+          <button
+            onClick={handleSubmit}
+            disabled={!query.trim()}
+            className="btn-secondary whitespace-nowrap disabled:opacity-50 absolute right-2 top-1/2 -translate-y-1/2"
+          >
+            <span className="sm:hidden">+</span>
+            <span className="hidden sm:inline">Add Item</span>
+          </button>
         </div>
-
-        {/* Add Button */}
-        <button 
-          onClick={handleSubmit} 
-          disabled={!query.trim()}
-          className="btn-secondary whitespace-nowrap disabled:opacity-50"
-        >
-          <span className="sm:hidden">+</span>
-          <span className="hidden sm:inline">Add Item</span>
-        </button>
       </div>
 
       {/* Search Suggestions Dropdown */}

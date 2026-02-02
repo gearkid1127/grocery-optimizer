@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import AOS from "aos";
 import { EnhancedSearchInput } from "@/components/EnhancedSearchInput";
 import { StoreLocationSelector } from "@/components/StoreLocationSelector";
 import { storeLocations } from "@/lib/data/storeLocations";
@@ -77,7 +78,8 @@ type QuoteResponse = {
 
 export default function Home() {
   const [items, setItems] = useState<Item[]>([]);
-  const [maxStores, setMaxStores] = useState<1 | 2>(2);
+  const [isFlexible, setIsFlexible] = useState(true);
+  const resultsRef = useRef<HTMLDivElement | null>(null);
   const [selectedStores, setSelectedStores] = useState<StoreId[]>([
     "walmart",
     "marianos", 
@@ -105,6 +107,7 @@ export default function Home() {
 
   const [resp, setResp] = useState<QuoteResponse | null>(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Load saved data from localStorage on component mount
   useEffect(() => {
@@ -135,14 +138,6 @@ export default function Home() {
       }
     }
 
-    const savedMaxStores = localStorage.getItem('grocery-optimizer-max-stores');
-    if (savedMaxStores) {
-      try {
-        setMaxStores(parseInt(savedMaxStores) as 1 | 2);
-      } catch (error) {
-        console.error('Error loading saved max stores:', error);
-      }
-    }
   }, []);
 
   // Save shopping list to localStorage whenever items change
@@ -160,29 +155,60 @@ export default function Home() {
     localStorage.setItem('grocery-optimizer-store-locations', JSON.stringify(selectedStoreLocations));
   }, [selectedStoreLocations]);
 
-  // Save max stores setting to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('grocery-optimizer-max-stores', maxStores.toString());
-  }, [maxStores]);
+    AOS.init({
+      duration: 600,
+      easing: "ease-out",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [resp]);
+
+  useEffect(() => {
+    if (resp?.result && !error) {
+      resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [resp, error]);
 
   async function compare() {
     setLoading(true);
     setResp(null);
+    setError(null);
 
-    const r = await fetch("/api/quote", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        items,
-        stores: selectedStores,
-        storeLocations: selectedStoreLocations,
-        maxStores,
-      }),
-    });
+    try {
+      const r = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items,
+          stores: selectedStores,
+          storeLocations: selectedStoreLocations,
+        }),
+      });
 
-    const json = await r.json();
-    setResp(json);
-    setLoading(false);
+      if (!r.ok) {
+        const errorData = await r.json();
+        throw new Error(errorData.error || `API error: ${r.status}`);
+      }
+
+      const json = await r.json();
+      
+      if (json.error) {
+        throw new Error(json.error);
+      }
+
+      setResp(json);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Failed to compare stores. Please try again.';
+      setError(message);
+      console.error('Compare error:', err);
+    } finally {
+      setLoading(false);
+    }
   }
 
   function addItem(query: string, flexible: boolean, selectedProduct?: {
@@ -241,7 +267,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="mx-auto max-w-6xl">
-        <header className="mb-12 text-center">
+        <header className="mb-12 text-center" data-aos="fade-up">
           <div className="inline-flex items-center gap-3 rounded-2xl bg-linear-to-r from-blue-600/10 to-indigo-600/10 px-6 py-3 mb-6">
             <div className="h-8 w-8 rounded-full bg-linear-to-r from-blue-600 to-indigo-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm">&#128722;</span>
@@ -251,10 +277,10 @@ export default function Home() {
             </span>
           </div>
           
-          <h1 className="text-6xl font-bold bg-linear-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-4">
+          <h1 className="mb-5 text-6xl font-bold leading-tight bg-linear-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent">
             Grocery Optimizer
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-4 text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Find the best deals across multiple stores with our intelligent price comparison engine. 
             <span className="text-blue-600 font-medium"> Save money, save time.</span>
           </p>
@@ -277,39 +303,8 @@ export default function Home() {
           {/* Left Column - Controls */}
           <div className="lg:col-span-2 space-y-8">
             {/* Control Panel */}
-            <section className="card-glass relative z-50">
+            <section className="card-glass relative z-50" data-aos="fade-up">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="text-sm font-semibold text-slate-700">Max stores:</span>
-                    <select
-                      className="select-modern"
-                      value={maxStores}
-                      onChange={(e) => setMaxStores(Number(e.target.value) as 1 | 2)}
-                    >
-                      <option value={1}>Single Store</option>
-                      <option value={2}>Up to 2 Stores</option>
-                    </select>
-                  </div>
-                </div>
-
-                <button 
-                  onClick={compare} 
-                  className="btn-primary inline-flex items-center gap-2" 
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                      Analyzing...
-                    </>
-                  ) : (
-                    <>
-                      <span>&#10024;</span>
-                      Compare Stores
-                    </>
-                  )}
-                </button>
               </div>
 
               {/* Store Selection */}
@@ -348,7 +343,7 @@ export default function Home() {
                                 : [...prev, store];
                             });
                           }}
-                          className="checkbox-modern"
+                          className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                         />
                         <div className={`w-3 h-3 rounded-full bg-linear-to-r ${storeConfig[store].color}`}></div>
                         <span className="font-medium text-slate-700 text-sm">{storeConfig[store].name}</span>
@@ -449,15 +444,55 @@ export default function Home() {
                 </div>
               )}
 
+              <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
+                <button
+                  type="button"
+                  onClick={() => setIsFlexible((prev) => !prev)}
+                  aria-pressed={isFlexible}
+                  className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 shadow-sm ${
+                    isFlexible
+                      ? "bg-green-100 text-green-700 ring-1 ring-green-200 hover:bg-green-200"
+                      : "bg-blue-100 text-blue-700 ring-1 ring-blue-200 hover:bg-blue-200"
+                  }`}
+                >
+                  {isFlexible ? (
+                    <span className="flex items-center gap-1">
+                      <span className="text-green-600">✓</span> Flexible
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-1">
+                      <span className="text-blue-600">🎯</span> Specific
+                    </span>
+                  )}
+                </button>
+                <button 
+                  onClick={compare} 
+                  className="btn-primary inline-flex items-center gap-2" 
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                      Analyzing...
+                    </>
+                  ) : (
+                    <>
+                      <span>&#10024;</span>
+                      Compare Stores
+                    </>
+                  )}
+                </button>
+              </div>
 
               <EnhancedSearchInput 
                 onAddItem={addItem}
+                isFlexible={isFlexible}
                 selectedStores={selectedStores}
 
               />
             </section>
 
-            <section className="card-glass relative z-10">
+            <section className="card-glass relative z-10" data-aos="fade-up" data-aos-delay="100">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
                   <span className="text-xl">&#128221;</span>
@@ -492,6 +527,7 @@ export default function Home() {
 
                     <div className="flex items-center gap-3">
                       <button
+                        type="button"
                         onClick={() =>
                           setItems((prev) =>
                             prev.map((i) =>
@@ -499,10 +535,11 @@ export default function Home() {
                             )
                           )
                         }
-                        className={`px-3 py-1 rounded-lg text-xs font-medium transition-all duration-200 ${
-                          item.flexible 
-                            ? "bg-green-100 text-green-700 hover:bg-green-200" 
-                            : "bg-amber-100 text-amber-700 hover:bg-amber-200"
+                        aria-pressed={item.flexible}
+                        className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold transition-all duration-200 shadow-sm ${
+                          item.flexible
+                            ? "bg-green-100 text-green-700 ring-1 ring-green-200 hover:bg-green-200"
+                            : "bg-amber-100 text-amber-700 ring-1 ring-amber-200 hover:bg-amber-200"
                         }`}
                       >
                         {item.flexible ? "Flexible" : "Specific"}
@@ -533,11 +570,28 @@ export default function Home() {
           </div>
 
           {/* Right Column - Results */}
-          <div className="space-y-6">
+          <div ref={resultsRef} className="space-y-6">
+            {error && (
+              <section className="card-glass bg-red-50 border border-red-200" data-aos="fade-up">
+                <div className="flex items-start gap-3">
+                  <div className="text-2xl shrink-0">⚠️</div>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-bold text-red-800 mb-1">Error</h3>
+                    <p className="text-sm text-red-700">{error}</p>
+                  </div>
+                  <button
+                    onClick={() => setError(null)}
+                    className="text-red-500 hover:text-red-700 shrink-0"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </section>
+            )}
             {bestOne && (
               <>
                 {/* Best Single Store */}
-                <section className="card-glass">
+                <section className="card-glass" data-aos="fade-up">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-lg">&#129351;</span>
                     <h3 className="text-sm font-bold text-slate-800">Best Single Store</h3>
@@ -659,7 +713,7 @@ export default function Home() {
                 </section>
 
                 {/* Best Two Stores */}
-                <section className="card-glass">
+                <section className="card-glass" data-aos="fade-up" data-aos-delay="100">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-lg">&#127942;</span>
                     <h3 className="text-sm font-bold text-slate-800">Best Multi-Store</h3>
@@ -744,7 +798,7 @@ export default function Home() {
                   ) : (
                     <div className="text-center py-8 text-slate-500">
                       <div className="text-2xl mb-2">&#128717;&#65039;</div>
-                      <p className="text-sm">Set max stores to 2 and compare</p>
+                      <p className="text-sm">Just one store is the cheapest option</p>
                     </div>
                   )}
                 </section>

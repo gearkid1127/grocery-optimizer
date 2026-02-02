@@ -72,8 +72,8 @@ export class TargetProvider implements PricingProvider {
 
   private async searchTargetAPI(query: string, storeLocationId?: string): Promise<any[]> {
     try {
-      // Using Target's search API (requires server-side proxy)
-      let apiUrl = `http://localhost:3000/api/target/search?query=${encodeURIComponent(query)}`;
+      // Using Target's search API via relative URL (server-side proxy)
+      let apiUrl = `/api/target/search?query=${encodeURIComponent(query)}`;
       if (storeLocationId) {
         apiUrl += `&storeId=${encodeURIComponent(storeLocationId)}`;
       }

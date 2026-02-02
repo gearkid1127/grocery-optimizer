@@ -100,6 +100,36 @@ export const productCatalog: Product[] = [
     keywords: ['eggs', 'pasture raised', 'vital farms'],
     basePrice: 6.98
   },
+  {
+    id: 'dairy-008',
+    name: 'Unsalted Butter',
+    brand: 'Land O Lakes',
+    category: 'Dairy',
+    subcategory: 'Butter',
+    size: { value: 16, unit: 'oz' },
+    keywords: ['butter', 'unsalted', 'land o lakes'],
+    basePrice: 4.98
+  },
+  {
+    id: 'dairy-009',
+    name: 'Sharp Cheddar Cheese',
+    brand: 'Kraft',
+    category: 'Dairy',
+    subcategory: 'Cheese',
+    size: { value: 8, unit: 'oz' },
+    keywords: ['cheddar', 'cheese', 'kraft', 'sharp'],
+    basePrice: 3.48
+  },
+  {
+    id: 'dairy-010',
+    name: 'Greek Yogurt Vanilla',
+    brand: 'Chobani',
+    category: 'Dairy',
+    subcategory: 'Yogurt',
+    size: { value: 32, unit: 'oz' },
+    keywords: ['yogurt', 'greek', 'vanilla', 'chobani'],
+    basePrice: 5.48
+  },
 
   // BEVERAGES
   {
@@ -226,6 +256,66 @@ export const productCatalog: Product[] = [
     keywords: ['apples', 'gala', 'fruit', 'fresh'],
     basePrice: 3.48
   },
+  {
+    id: 'produce-004',
+    name: 'Iceberg Lettuce',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Vegetables',
+    size: { value: 1, unit: 'ct' },
+    keywords: ['lettuce', 'iceberg', 'salad', 'fresh'],
+    basePrice: 1.48
+  },
+  {
+    id: 'produce-005',
+    name: 'Romaine Lettuce Hearts',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Vegetables',
+    size: { value: 3, unit: 'ct' },
+    keywords: ['lettuce', 'romaine', 'hearts', 'salad'],
+    basePrice: 2.98
+  },
+  {
+    id: 'produce-006',
+    name: 'Roma Tomatoes',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Vegetables',
+    size: { value: 1, unit: 'lb' },
+    keywords: ['tomatoes', 'roma', 'tomato', 'produce'],
+    basePrice: 1.98
+  },
+  {
+    id: 'produce-007',
+    name: 'Yellow Onions',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Vegetables',
+    size: { value: 3, unit: 'lb' },
+    keywords: ['onions', 'yellow', 'produce', 'vegetables'],
+    basePrice: 2.48
+  },
+  {
+    id: 'produce-008',
+    name: 'Russet Potatoes',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Vegetables',
+    size: { value: 5, unit: 'lb' },
+    keywords: ['potatoes', 'russet', 'produce', 'vegetables'],
+    basePrice: 3.98
+  },
+  {
+    id: 'produce-009',
+    name: 'Strawberries',
+    brand: 'Fresh',
+    category: 'Produce',
+    subcategory: 'Fruit',
+    size: { value: 1, unit: 'lb' },
+    keywords: ['strawberries', 'berries', 'fruit', 'fresh'],
+    basePrice: 4.28
+  },
 
   // CEREAL & BREAKFAST
   {
@@ -334,6 +424,96 @@ export const productCatalog: Product[] = [
     keywords: ['ketchup', 'heinz', 'tomato', 'condiment'],
     basePrice: 3.98
   },
+  {
+    id: 'pantry-003b',
+    name: 'Tomato Ketchup',
+    brand: 'Great Value',
+    category: 'Pantry',
+    subcategory: 'Condiments',
+    size: { value: 32, unit: 'oz' },
+    keywords: ['ketchup', 'tomato', 'condiment'],
+    basePrice: 2.18
+  },
+  {
+    id: 'pantry-003c',
+    name: 'Yellow Mustard',
+    brand: 'French\'s',
+    category: 'Pantry',
+    subcategory: 'Condiments',
+    size: { value: 20, unit: 'oz' },
+    keywords: ['mustard', 'yellow mustard', 'frenchs', 'condiment'],
+    basePrice: 2.98
+  },
+  {
+    id: 'pantry-003d',
+    name: 'Yellow Mustard',
+    brand: 'Great Value',
+    category: 'Pantry',
+    subcategory: 'Condiments',
+    size: { value: 20, unit: 'oz' },
+    keywords: ['mustard', 'yellow mustard', 'condiment'],
+    basePrice: 1.28
+  },
+  {
+    id: 'pantry-004',
+    name: 'Spaghetti Pasta',
+    brand: 'Barilla',
+    category: 'Pantry',
+    subcategory: 'Pasta',
+    size: { value: 16, unit: 'oz' },
+    keywords: ['pasta', 'spaghetti', 'barilla', 'noodles'],
+    basePrice: 1.98
+  },
+  {
+    id: 'pantry-005',
+    name: 'Marinara Pasta Sauce',
+    brand: 'Ragu',
+    category: 'Pantry',
+    subcategory: 'Sauce',
+    size: { value: 24, unit: 'oz' },
+    keywords: ['pasta sauce', 'marinara', 'ragu', 'tomato'],
+    basePrice: 2.48
+  },
+  {
+    id: 'pantry-006',
+    name: 'Long Grain White Rice',
+    brand: 'Mahatma',
+    category: 'Pantry',
+    subcategory: 'Rice',
+    size: { value: 32, unit: 'oz' },
+    keywords: ['rice', 'white rice', 'long grain', 'mahatma'],
+    basePrice: 3.28
+  },
+  {
+    id: 'pantry-007',
+    name: 'Extra Virgin Olive Oil',
+    brand: 'Bertolli',
+    category: 'Pantry',
+    subcategory: 'Oil',
+    size: { value: 25, unit: 'oz' },
+    keywords: ['olive oil', 'extra virgin', 'bertolli', 'oil'],
+    basePrice: 7.98
+  },
+  {
+    id: 'pantry-008',
+    name: 'Granulated Sugar',
+    brand: 'Domino',
+    category: 'Pantry',
+    subcategory: 'Baking',
+    size: { value: 4, unit: 'lb' },
+    keywords: ['sugar', 'granulated', 'domino', 'baking'],
+    basePrice: 3.98
+  },
+  {
+    id: 'pantry-009',
+    name: 'All-Purpose Flour',
+    brand: 'Gold Medal',
+    category: 'Pantry',
+    subcategory: 'Baking',
+    size: { value: 5, unit: 'lb' },
+    keywords: ['flour', 'all-purpose', 'gold medal', 'baking'],
+    basePrice: 4.48
+  },
 
   // FROZEN
   {
@@ -354,6 +534,26 @@ export const productCatalog: Product[] = [
     subcategory: 'Ice Cream',
     size: { value: 64, unit: 'oz' },
     keywords: ['ice cream', 'breyers', 'vanilla', 'frozen'],
+    basePrice: 5.98
+  },
+  {
+    id: 'frozen-003',
+    name: 'Vanilla Ice Cream',
+    brand: 'Haagen-Dazs',
+    category: 'Frozen',
+    subcategory: 'Ice Cream',
+    size: { value: 28, unit: 'oz' },
+    keywords: ['ice cream', 'vanilla', 'haagen-dazs', 'frozen'],
+    basePrice: 6.98
+  },
+  {
+    id: 'frozen-004',
+    name: 'Chocolate Fudge Brownie Ice Cream',
+    brand: 'Ben & Jerry\'s',
+    category: 'Frozen',
+    subcategory: 'Ice Cream',
+    size: { value: 16, unit: 'oz' },
+    keywords: ['ice cream', 'ben and jerrys', 'chocolate', 'frozen', 'brownie'],
     basePrice: 5.98
   },
 
@@ -568,35 +768,60 @@ export function searchProducts(query: string, limit: number = 20): Product[] {
   const queryLower = query.toLowerCase().trim();
   if (!queryLower) return [];
 
+  const normalizedQuery = queryLower.replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+  const rawTokens = normalizedQuery.split(" ").filter(token => token.length > 1);
+  const tokens = rawTokens.flatMap(token => {
+    if (token.endsWith("s") && token.length > 3) {
+      return [token, token.slice(0, -1)];
+    }
+    return [token];
+  });
+
   const results = new Map<string, { product: Product; score: number }>();
 
   productCatalog.forEach(product => {
     let score = 0;
 
+    const nameLower = product.name.toLowerCase();
+    const brandLower = product.brand.toLowerCase();
+    const categoryLower = product.category.toLowerCase();
+    const subcategoryLower = product.subcategory.toLowerCase();
+    const keywordsLower = product.keywords.map(keyword => keyword.toLowerCase());
+    const combinedText = `${nameLower} ${brandLower} ${categoryLower} ${subcategoryLower} ${keywordsLower.join(" ")}`;
+
     // Exact name match (highest priority)
-    if (product.name.toLowerCase() === queryLower) score += 100;
+    if (nameLower === queryLower) score += 100;
     
     // Brand match
-    if (product.brand.toLowerCase() === queryLower) score += 80;
+    if (brandLower === queryLower) score += 80;
     
     // Starts with query
-    if (product.name.toLowerCase().startsWith(queryLower)) score += 60;
+    if (nameLower.startsWith(queryLower)) score += 60;
     
     // Contains query in name
-    if (product.name.toLowerCase().includes(queryLower)) score += 40;
+    if (nameLower.includes(queryLower)) score += 40;
     
     // Keywords match
-    const keywordMatches = product.keywords.filter(keyword => 
-      keyword.toLowerCase().includes(queryLower) || queryLower.includes(keyword.toLowerCase())
+    const keywordMatches = keywordsLower.filter(keyword => 
+      keyword.includes(queryLower) || queryLower.includes(keyword)
     ).length;
     score += keywordMatches * 20;
     
     // Category/subcategory match
-    if (product.category.toLowerCase().includes(queryLower)) score += 30;
-    if (product.subcategory.toLowerCase().includes(queryLower)) score += 35;
+    if (categoryLower.includes(queryLower)) score += 30;
+    if (subcategoryLower.includes(queryLower)) score += 35;
     
     // Brand contains query
-    if (product.brand.toLowerCase().includes(queryLower)) score += 25;
+    if (brandLower.includes(queryLower)) score += 25;
+
+    if (tokens.length > 0) {
+      const matchedTokens = tokens.filter(token => combinedText.includes(token));
+      score += matchedTokens.length * 15;
+
+      if (matchedTokens.length === tokens.length && tokens.length > 1) {
+        score += 40;
+      }
+    }
 
     if (score > 0) {
       results.set(product.id, { product, score });

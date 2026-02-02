@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
     console.log(`Generic product search for: "${query}"`);
 
     // Search our product database for generic suggestions
-    const products = searchProducts(query, 10);
+    const products = searchProducts(query, 20);
     console.log(`Found ${products.length} products`);
     
     return NextResponse.json({

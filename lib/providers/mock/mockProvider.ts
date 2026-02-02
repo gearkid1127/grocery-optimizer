@@ -7,6 +7,7 @@ import type {
   StoreQuote,
 } from "@/lib/domain/types";
 import { sizeWithinTolerance, unitPrice } from "@/lib/domain/normalize";
+import { searchProducts } from "@/lib/data/productDatabase";
 
 async function loadJson(storeId: StoreId): Promise<StoreProduct[]> {
   // This will load: lib/providers/mock/data/<storeId>.json
@@ -22,9 +23,97 @@ function normalizeText(s: string) {
     .trim();
 }
 
+function tokenize(text: string): string[] {
+  return normalizeText(text)
+    .split(" ")
+    .filter((token) => token.length > 2);
+}
+
+function expandToken(token: string): string[] {
+  const variants = new Set([token]);
+  if (token.endsWith("s") && token.length > 3) {
+    variants.add(token.slice(0, -1));
+  }
+  return Array.from(variants);
+}
+
+function queryMatches(hay: string, query: string): boolean {
+  const queryTokens = tokenize(query);
+  if (queryTokens.length === 0) return false;
+
+  const hayTokens = tokenize(hay);
+
+  if (queryTokens.length === 1) {
+    const token = queryTokens[0];
+    return expandToken(token).some((variant) => hayTokens.includes(variant));
+  }
+
+  if (hay.includes(query)) return true;
+
+  const matchedCount = queryTokens.filter((token) =>
+    expandToken(token).some((variant) => hayTokens.includes(variant))
+  ).length;
+
+  return matchedCount >= Math.min(2, queryTokens.length);
+}
+
+function mapCategoryToStore(category: string): string {
+  const cat = category.toLowerCase();
+  if (cat.includes("dairy") || cat.includes("milk") || cat.includes("cheese") || cat.includes("egg")) return "dairy";
+  if (cat.includes("produce") || cat.includes("fruit") || cat.includes("vegetable")) return "produce";
+  if (cat.includes("meat") || cat.includes("seafood") || cat.includes("poultry")) return "meat";
+  if (cat.includes("bread") || cat.includes("bakery")) return "bakery";
+  return "pantry";
+}
+
+function normalizeSize(size: { value: number; unit: string }): { value: number; unit: "oz" | "lb" | "ct" } {
+  if (size.unit === "oz" || size.unit === "lb" || size.unit === "ct") return size as { value: number; unit: "oz" | "lb" | "ct" };
+  if (size.unit === "gal") return { value: size.value * 128, unit: "oz" };
+  if (size.unit === "l") return { value: Math.round(size.value * 33.814 * 10) / 10, unit: "oz" };
+  if (size.unit === "ml") return { value: Math.round(size.value * 0.033814 * 10) / 10, unit: "oz" };
+  return { value: size.value, unit: "ct" };
+}
+
+function priceMultiplier(storeId: StoreId): number {
+  switch (storeId) {
+    case "walmart":
+      return 1.0;
+    case "target":
+      return 1.08;
+    case "marianos":
+      return 1.06;
+    case "jewel":
+      return 1.04;
+    case "butera":
+      return 1.02;
+    case "caputos":
+      return 1.05;
+    case "petes":
+      return 0.98;
+    default:
+      return 1.0;
+  }
+}
+
+function fallbackProduct(item: GroceryItem, storeId: StoreId): StoreProduct | undefined {
+  const [match] = searchProducts(item.query, 1);
+  if (!match) return undefined;
+
+  return {
+    sku: `fallback-${storeId}-${match.id}`,
+    name: match.name,
+    brand: match.brand,
+    category: mapCategoryToStore(match.category),
+    size: normalizeSize(match.size),
+    price: Math.round(match.basePrice * priceMultiplier(storeId) * 100) / 100,
+    inStock: true,
+  };
+}
+
 function matchProduct(
   products: StoreProduct[],
-  item: GroceryItem
+  item: GroceryItem,
+  storeId: StoreId
 ): { product?: StoreProduct; status: LineItemMatch["status"]; reason?: string } {
   const q = normalizeText(item.query);
   const inStock = products.filter((p) => p.inStock);
@@ -37,8 +126,7 @@ function matchProduct(
       const hay = normalizeText(`${p.brand ?? ""} ${p.name}`);
       const brandOk = brand ? hay.includes(brand) : true;
 
-      // simple match: full query OR any word in query
-      const queryOk = hay.includes(q) || q.split(" ").some((w) => hay.includes(w));
+      const queryOk = queryMatches(hay, q);
 
       const sizeOk = item.desiredSize ? sizeWithinTolerance(item.desiredSize, p.size) : true;
 
@@ -49,10 +137,15 @@ function matchProduct(
 
     const oosCandidates = products
       .filter((p) => !p.inStock)
-      .filter((p) => normalizeText(`${p.brand ?? ""} ${p.name}`).includes(q));
+      .filter((p) => queryMatches(normalizeText(`${p.brand ?? ""} ${p.name}`), q));
 
     if (oosCandidates.length > 0) {
       return { product: oosCandidates[0], status: "out_of_stock", reason: "Matched item is out of stock" };
+    }
+
+    const fallback = !item.brand ? fallbackProduct(item, storeId) : undefined;
+    if (fallback) {
+      return { product: fallback, status: "substituted", reason: "Used common product fallback" };
     }
 
     return { status: "missing", reason: "No matching brand-specific item found" };
@@ -62,7 +155,7 @@ function matchProduct(
   const candidates = inStock.filter((p) => {
     const hay = normalizeText(`${p.brand ?? ""} ${p.name} ${p.category}`);
 
-    const queryOk = q.split(" ").some((w) => hay.includes(w)) || hay.includes(q);
+    const queryOk = queryMatches(hay, q);
     const sizeOk = item.desiredSize ? sizeWithinTolerance(item.desiredSize, p.size) : true;
 
     return queryOk && sizeOk;
@@ -71,10 +164,15 @@ function matchProduct(
   if (candidates.length === 0) {
     const oos = products
       .filter((p) => !p.inStock)
-      .filter((p) => normalizeText(`${p.name} ${p.category}`).includes(q));
+      .filter((p) => queryMatches(normalizeText(`${p.name} ${p.category}`), q));
 
     if (oos.length > 0) {
       return { product: oos[0], status: "out_of_stock", reason: "Comparable item is out of stock" };
+    }
+
+    const fallback = fallbackProduct(item, storeId);
+    if (fallback) {
+      return { product: fallback, status: "substituted", reason: "Used common product fallback" };
     }
 
     return { status: "missing", reason: "No comparable item found" };
@@ -103,7 +201,7 @@ export class MockProvider implements PricingProvider {
     const products = await this.listProducts();
 
     const matches: LineItemMatch[] = items.map((item) => {
-      const m = matchProduct(products, item);
+      const m = matchProduct(products, item, this.storeId);
 
       if (!m.product && m.status === "missing") {
         return { itemId: item.id, storeId: this.storeId, status: "missing", reason: m.reason };

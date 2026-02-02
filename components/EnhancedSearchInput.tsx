@@ -114,7 +114,7 @@ export function EnhancedSearchInput({ onAddItem, isFlexible, selectedStores, sel
         reasoning: `${product.brand} ${product.name} - ${product.size.value}${product.size.unit}`
       }));
 
-      setSuggestions(genericSuggestions.slice(0, 8));
+      setSuggestions(genericSuggestions.slice(0, 10));
       setSelectedIndex(-1);
     } catch (error) {
       console.error('Product search error:', error);
